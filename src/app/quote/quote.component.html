@@ -4,5 +4,12 @@
         <div class="col">
             <app-quote-form></app-quote-form>
         </div>
+        <div class="col">
+                <h3>Quotes list</h3>
+                <hr>
+                <ul>
+                    <li *ngFor="let quote of quotes">{{quote.quote}}</li>
+                </ul>
+        </div>
     </div>
 </div>
