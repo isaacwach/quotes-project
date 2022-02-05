@@ -12,6 +12,12 @@ export class QuoteComponent implements OnInit {
     new Quote("ultimate sophistication", "eistein", "zac", "")
     
   ]
+
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {

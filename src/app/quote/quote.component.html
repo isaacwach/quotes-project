@@ -10,7 +10,7 @@
                 <ul>
                     <li *ngFor="let quote of quotes; let i=index">{{quote.quote}}</li>
                     <button>Display author</button>
-                    <app-author-detail [quote='quote']></app-author-detail>
+                    <app-author-detail [quote='quote'] (isComplete)="deleteQuote($event, 1)"></app-author-detail>
                 </ul>
         </div>
     </div>
