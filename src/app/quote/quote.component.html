@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Best Motivational Quotes</h1>
-    <div class="row">
+    <div class="">
         <div class="col">
             <app-quote-form></app-quote-form>
         </div>
@@ -8,7 +8,8 @@
                 <h3>Quotes list</h3>
                 <hr>
                 <ul>
-                    <li *ngFor="let quote of quotes">{{quote.quote}}</li>
+                    <li *ngFor="let quote of quotes; let i=index">{{quote.quote}}</li>
+                    <button>Display author</button>
                     <app-author-detail [quote='quote']></app-author-detail>
                 </ul>
         </div>

@@ -9,9 +9,7 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
   title = 'quotes';
   quotes:Quote[]=[
-    { quote: "silence the ultimate sophistication", author:"Eistein", person:"mike"},
-    { quote: "silence the ultimate sophistication", author:"Eistein", person:"mike"},
-    { quote: "silence the ultimate sophistication", author:"Eistein", person:"mike"}
+    new Quote("ultimate sophistication", "eistein", "zac")
     
   ]
   constructor() { }
