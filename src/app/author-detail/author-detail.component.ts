@@ -7,16 +7,20 @@ import {Quote} from '../quote'
   styleUrls: ['./author-detail.component.css']
 })
 export class AuthorDetailComponent implements OnInit {
-
-  @Input() quote: Quote;
-  @Output() isComplete= new EventEmitter<boolean>();
-
-  quoteDelete(publish: boolean){
-    this.isComplete.emit(publish);
+  @Input() quoty: Quote;
+  @Output() isRead = new EventEmitter<boolean>();
+  deleteQuote(read:boolean){
+    this.isRead.emit(read);
+  }
+  upvote(){
+    this.quoty.likes+=1;
+  }
+  downvote(){
+    this.quoty.dislikes+=1;
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

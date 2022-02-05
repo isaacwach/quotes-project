@@ -1,17 +1,26 @@
-<div class="container">
-    <h1>Best Motivational Quotes</h1>
-    <div class="">
-        <div class="col">
-            <app-quote-form></app-quote-form>
+<div class="overlay">
+    <h1>
+      {{ title | titlecase }}
+    </h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <app-quote-form (add)="addedQuote($event)"></app-quote-form>
         </div>
-        <div class="col">
-                <h3>Quotes list</h3>
-                <hr>
-                <ul>
-                    <li *ngFor="let quote of quotes; let i=index">{{quote.quote}}</li>
-                    <button>Display author</button>
-                    <app-author-detail [quote='quote'] (isComplete)="deleteQuote($event, 1)"></app-author-detail>
-                </ul>
+        <div class="col-sm-9">
+          <div class="all-cards">
+            <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 24rem;"  >
+              <div class="card-body">
+                <h4 class="card-title" appHighlightQoute >{{quote.title}} {{quote.maxlikes}}<button (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button" >See More</button></h4>
+                <p class="card-text" id="param">{{quote.quote}}</p>
+                <app-author-detail *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'></app-author-detail>
+                <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+               
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  
+  </div>
