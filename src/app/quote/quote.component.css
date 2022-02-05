@@ -1,0 +1,10 @@
+.all-cards button {
+    width: 160px;
+    text-align: center;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+
+}
