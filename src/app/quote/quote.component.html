@@ -9,6 +9,7 @@
                 <hr>
                 <ul>
                     <li *ngFor="let quote of quotes">{{quote.quote}}</li>
+                    <app-author-detail [quote='quote']></app-author-detail>
                 </ul>
         </div>
     </div>
