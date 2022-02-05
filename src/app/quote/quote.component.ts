@@ -9,12 +9,11 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
   title = 'Best Inspirational Quotes';
   quotes:Quote[] = [
-    new Quote (1,'Charles','Human spirit','The human spirit must prevail over technology to allow humans be in charge.','Albert Einstein', new Date(2019,7,12),0,0),
-    new Quote (2,'Wendy','Technology…','Technology… the knack of so arranging  that we don’t have to experience it.','Max Frisch',new Date(2019,7,14),0,0),
-    new Quote (3,'Mikey','The great myth','The great myth of our times is that technology is communication.','Libby Larsen',new Date(2019,6,3),0,0),
-    new Quote (4,'Beatrice','Communication','Communications tools don’t get socially interesting until they get technologically boring.','Clay Shirky',new Date(2019,7,7),0,0),
-    new Quote (5,'Charles','Code and people','Programs must be written for people to read, and only incidentally for machines to execute.','Harold Abelson',new Date(2019,7,17),0,0),
-    new Quote (6,'Alfred','Tech and life','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn',new Date(2019,7,15),0,0)
+    new Quote (1,'Ayzaq','Life hacks','Life is what happens when you’re busy making other plans.','Dalai Lama', new Date(2022,3,24),0,0),
+    new Quote (2,'Shee','Auccess in life','Many of life’s failures are people who did not realize how close they were to success when they gave up.','John Lennon',new Date(2020,8,2),0,0),
+    new Quote (3,'Mason','Life choices','Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this..','Celine Dion',new Date(2018,10,13),0,0),
+    new Quote (4,'Hudson','Happiness','Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this.','Leonardo DiCaprio',new Date(2021,6,9),0,0),
+   
   ];
   get sortQuotes() {
     return this.quotes.sort((a, b) => {
