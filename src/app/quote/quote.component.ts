@@ -6,7 +6,7 @@ import {Quote} from '../quote'
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class QuotesComponent implements OnInit {
+export class QuoteComponent implements OnInit {
   title = 'welcome to tech quotes';
   quotes:Quote[] = [
     new Quote (1,'Charles','Human spirit','The human spirit must prevail over technology to allow humans be in charge.','Albert Einstein', new Date(2019,7,12),0,0),
