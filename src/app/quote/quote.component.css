@@ -29,6 +29,15 @@
     float: right;
     font-size: 14px;
   }
+  .quotes-list{
+    padding-top: 40px;
+  }
+  .quotes-list h3{
+    color: orange; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
   #datecolor{
     color: orange;
     font-style: italic;

@@ -8,19 +8,23 @@
           <app-quote-form (add)="addedQuote($event)"></app-quote-form>
         </div>
         <div class="cards-column col-md-9 sm-9">
-          <div class="all-cards">
-            <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 400px;"  >
-              <div class="card-body">
-                <h3 class="card-title" appHighlightQoute >{{quote.title}}</h3>
-                <p class="card-text" id="param">{{quote.quote}}</p>
-                <app-author-detail *ngIf='quote.showInfo' bind-quoted='quote' (isRead)='quoteDelete($event,i)'></app-author-detail>
-                <span class="card-subtitle mb-2">Submitted by: <span id="name">{{quote.name}} </span><span id="date">On: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
-               
-              </div>
-              <button (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button" >More Quote details</button>
+        
+        </div>
+      </div>
+      <div class="container quotes-list">
+        <h3>Quotes List</h3>
+        <div class="all-cards">
+          <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 400px;"  >
+            <div class="card-body">
+              <h3 class="card-title" appHighlightQoute >{{quote.title}}</h3>
+              <p class="card-text" id="param">{{quote.quote}}</p>
+              <app-author-detail *ngIf='quote.showInfo' bind-quoted='quote' (isRead)='quoteDelete($event,i)'></app-author-detail>
+              <span class="card-subtitle mb-2">Submitted by: <span id="name">{{quote.name}} </span><span id="date">On: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+             
             </div>
-            
+            <button (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button" >More Quote details</button>
           </div>
+          
         </div>
       </div>
     </div>
