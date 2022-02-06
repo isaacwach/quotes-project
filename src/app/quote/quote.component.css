@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 40px;
+    justify-content: space-between;
 }
 .overlay h1{
     text-align: center;
