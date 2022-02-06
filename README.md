@@ -2,7 +2,7 @@
 ## By Isaac Wachira
 ## Description
 This project is a web application for recording quotes. A user can enter the details of their favorite quotes, including the quote, title, author and the name of the person who submitted the quote. The applicatuion calculates the time that has passed since the goal was submitted and outputs it. A user can also upvote or downvote a quote. 
-![Landing page photo](https://github.com/isaacwach/quotes-project/blob/master/src/assets/images/quote-p.png)
+![Landing page photo](https://github.com/isaacwach/quotes-project/blob/master/src/assets/images/quotepage.png)
 ## Author information
 I am a full stack developer, with impeccable skills in web development, UI design, and problem solving skills using algorithms. Besides, i have knowlege in enterprise development, financial accounting and business management.
 ## Setup/Installation Requirements
