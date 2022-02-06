@@ -13,6 +13,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faThumbsUp as farThumbsup } from '@fortawesome/free-regular-svg-icons';
 import { faThumbsUp as fasThumbsup } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsDown as farThumbsdown } from '@fortawesome/free-regular-svg-icons';
+import { faThumbsDown as fasThumbsdown } from '@fortawesome/free-solid-svg-icons';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +37,6 @@ import { faThumbsUp as fasThumbsup } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule { 
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasThumbsup, farThumbsup);
+    library.addIcons(fasThumbsup, farThumbsup, farThumbsdown, fasThumbsdown);
   }
 }
