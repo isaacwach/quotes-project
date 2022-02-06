@@ -2,5 +2,5 @@
 <div class="container-fluid" id="buttons">
   <button class="btn btn-sm btn-success" (click)='upvote()'>{{quoty.likes}}  <fa-icon [icon]="['fas', 'thumbs-up']"></fa-icon></button> 
   <button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quoty.dislikes}} <fa-icon [icon]="['fas', 'thumbs-down']"></fa-icon></button> 
-  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button> 
+  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><fa-icon [icon]="['fas', 'trash']"></fa-icon></button> 
 </div>

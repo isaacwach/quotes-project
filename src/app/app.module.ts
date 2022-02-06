@@ -15,6 +15,8 @@ import { faThumbsUp as farThumbsup } from '@fortawesome/free-regular-svg-icons';
 import { faThumbsUp as fasThumbsup } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsDown as farThumbsdown } from '@fortawesome/free-regular-svg-icons';
 import { faThumbsDown as fasThumbsdown } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt as farTrash } from '@fortawesome/free-regular-svg-icons';
+import { faTrash as fasTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 @NgModule({
@@ -37,6 +39,6 @@ import { faThumbsDown as fasThumbsdown } from '@fortawesome/free-solid-svg-icons
 })
 export class AppModule { 
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasThumbsup, farThumbsup, farThumbsdown, fasThumbsdown);
+    library.addIcons(fasThumbsup, farThumbsup, farThumbsdown, fasThumbsdown, fasTrash, farTrash);
   }
 }
