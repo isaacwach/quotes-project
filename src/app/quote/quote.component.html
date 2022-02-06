@@ -13,7 +13,7 @@
               <div class="card-body">
                 <h3 class="card-title" appHighlightQoute >{{quote.title}}</h3>
                 <p class="card-text" id="param">{{quote.quote}}</p>
-                <app-author-detail *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'></app-author-detail>
+                <app-author-detail *ngIf='quote.showInfo' bind-quoted='quote' (isRead)='quoteDelete($event,i)'></app-author-detail>
                 <span class="card-subtitle mb-2">Submitted by: <span id="name">{{quote.name}} </span><span id="date">On: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
                
               </div>
