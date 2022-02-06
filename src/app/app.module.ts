@@ -9,6 +9,10 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faThumbsUp as farThumbsup } from '@fortawesome/free-regular-svg-icons';
+import { faThumbsUp as fasThumbsup } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -22,9 +26,14 @@ import { DateCountPipe } from './date-count.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library: FaIconLibrary) {
+    library.addIcons(fasThumbsup, farThumbsup);
+  }
+}
