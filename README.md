@@ -1,4 +1,4 @@
-# Delani Studio
+# Quotes App
 ## By Isaac Wachira
 ## Description
 This project is a web application for recording quotes. A user can enter the details of their favorite quotes, including the quote, title, author and the name of the person who submitted the quote. The applicatuion calculates the time that has passed since the goal was submitted and outputs it. A user can also upvote or downvote a quote. 
